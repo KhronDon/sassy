@@ -5,8 +5,49 @@ $base-font-family: sans-serif
 
 html
   text-size-adjust: 100%
+  background-color: tan
 
 body
-  @include font-smoothing(on)
-  margin: 0
-  font: $base-text-size / 1 $base-font-family
+  margin: auto
+  font: 16px / 1 sans-serif
+
+.header
+  background-color: lightgrey
+  border-top-style: solid
+  border-color: red
+  border-radius: 2em
+
+  img
+    width: 20px
+
+  ul
+    display: flex
+    justify-content: space-around
+
+    li
+      color: black
+      font-size: 20px
+      display: inline
+
+      &:hover
+        color: red
+
+.header2
+  text-align: center
+
+.gallery
+  display: flex
+  justify-content: center
+
+  .images
+    display: flex
+    flex-direction: column
+
+.body
+  display: flex
+
+  .link
+    text-decoration: underline
+
+    &:hover
+      color: red
